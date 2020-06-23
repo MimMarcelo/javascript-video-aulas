@@ -1,18 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Define a versão do documento HTML como a versão 5 -->
+
+<!-- Indica o início do documento HTML e indica que o idioma padrão é o HTML -->
 <html lang="pt">
-    <head>
+    <head> <!-- Indica o início do HEAD do HTML -->
         <meta charset="utf-8">
-        <title></title>
+        <title>Conhecendo o Javascript</title>
+
+        <!--
+        Importa o arquivo Javascript externo
+        Neste caso, como o Javascript faz referência a um elemento do HTML
+        e não há verificação se o HTML já foi carregado, seu funcionamento falha
+        -->
         <script src="referencia-html.js">
         </script>
     </head>
-    <body>
+    <body> <!-- Indica o início do BODY do HTML -->
+
+        <!-- Exemplo de uso do Javascript embutido -->
         <script>
             document.write("Hello world");
         </script>
         <br>
+
+        <!-- Exemplo de uso do Javascript em linha -->
         <button onclick="alert('Hola mundo')">Em espanhol</button>
         <br>
+
+        <!-- Importa o arquivo Javascript externo -->
         <script src="ola-mundo.js">
         </script>
     </body>
